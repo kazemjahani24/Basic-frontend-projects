@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGB Color Guessing GameProject</title>
+    <link rel="stylesheet" type="text/css" href="D:\WorkSpaces\udemy\bootcamp\css\82style.css">
+
+</head>
+<body>
+
+    <h1>the great <span id="colorDisplay"> RGB </span>color game</h1>
+    
+   
+        <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
+            <!--
+            14.1_ now we add the two buttons we have easy and hard
+            
+            14.3 next we want to make the buttons to behave in  the way that when
+            we click on the easy button we get 3 squares and when we click on the 
+            hard button we get a 6 squares. so to make them work, we need to
+            select them in our js file and for that they need to have an id.
+
+            -->
+           
+            <button id="easyBtn">Easy</button>
+            <button id="hardBtn" class="selected">Hard</button>
+        </div>
+
+    <div id  = "container">
+       
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+    </div>
+    <script src="D:\WorkSpaces\udemy\bootcamp\js\82_ColorGameProject.js"></script>
+
+</body>
+</html>

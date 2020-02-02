@@ -1,0 +1,46 @@
+body{
+    background-color:#232323 ;
+}
+
+.square{
+    width: 30%;
+    background: purple;
+
+  
+    padding-bottom:30% ;
+
+    float: left;
+    margin: 1.66%;
+
+}
+
+#container{
+    max-width: 600px;
+    margin: 0 auto;
+    
+
+}
+
+h1{
+    color: white;
+}
+
+
+
+#stripe{
+background: white;
+height: 30px;
+text-align: center;
+color: black;
+}
+
+/*
+14.2_ what i want to focus here is to make the button to look selected
+ when the page is loaded, and we can do that by on and offing a class
+*/
+
+.selected{
+    background: blue;
+
+}
+

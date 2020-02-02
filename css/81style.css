@@ -1,0 +1,47 @@
+body{
+    background-color:#232323 ;
+}
+
+.square{
+    width: 30%;
+    background: purple;
+
+  
+    padding-bottom:30% ;
+
+    float: left;
+    margin: 1.66%;
+
+}
+
+#container{
+    max-width: 600px;
+    margin: 0 auto;
+    
+
+}
+
+h1{
+    color: white;
+}
+
+/*
+span{
+    color: white;
+}
+*/
+
+#stripe{
+background: white;
+height: 30px;
+text-align: center;
+
+/*13.2_now we have a span which its color is white so we need to make the color 
+of this div black, but unfortunetly this is not going to work, because
+there is an issue of specificity. so we need to remove the the span 
+in the upper part, however the white background of span will still work
+because it is inside an h1 and that h1 we already set its background to
+white.
+*/
+color: black;
+}

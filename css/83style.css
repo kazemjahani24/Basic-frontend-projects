@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    background-color:#232323 ;
+    /*17.2_this will get rid of the black space between body and h1
+    */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom:30% ;
+    float: left;
+    margin: 1.66%;
+
+    /*19.2_ line below:*/
+    transition: background 0.5s;
+
+    /*
+    19.1_here for the squares in the linr below we work on styling to make 
+    it look like a dice rounding look. to know more about the border radius
+    we can go to border radius css mdn and see what are the other properties 
+    that we can use with border
+    */
+    border-radius: 15%;
+}
+
+#container{
+    max-width: 600px;
+    margin: 20px auto;
+
+    
+
+}
+
+h1{
+    color: white;
+    /*
+    17.1_aligning the things to the center and other things which we changed
+    in this section.
+    */
+    text-align: center;
+    margin: 0;
+    background: steelblue;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    /* in the line below for the paddind, first 20px is for adding padding
+    to top and buttom,  and 0 means add no padding to the left and right.
+    */
+    padding: 20px 0;
+}
+
+#colorDisplay{
+/*17.3_ now we want to say that the font size of the span is 200% of the h1 font*/
+font-size: 200%;
+}
+
+#stripe{
+background: white;
+height: 30px;
+text-align: center;
+color: black;
+
+}
+
+
+
+.selected{
+
+   color: white;
+   background: steelblue;
+
+}
+/*18.1_all the buttons with their styling is done here below*/
+button{
+    border: none;
+    background-color: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    
+    
+    /*18.2_in the below we are saying that when we click or hover over
+    button then it will take 2 seconds or whatever second that we choose
+     for the color to fade in.
+    */
+    transition: all 0.3s ;
+}
+
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+
+

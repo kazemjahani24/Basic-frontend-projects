@@ -1,0 +1,57 @@
+<!-- this lesson consist of a lof of html,css, js dom manipulation.
+how this works is that we load up the page and we get 6 random colors
+and one of the colors is listed above the six colors and we need to know
+ the color and click on the correct one.for rgb there are three parts 
+ and the first one is red, green,blue.and we can make all the rest of 
+ the colors using these three colors.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGB Color Guessing GameProject</title>
+    <link rel="stylesheet" type="text/css" href="D:\WorkSpaces\udemy\bootcamp\css\81style.css">
+
+</head>
+<body>
+    <!--4_now we want to make sure that every time we refresh the 
+    page we get the randomized rgb code in the webpage written, so
+    same as  the scoreKeeper excercise, we need to add a span to h1 
+    so that only desired part of the code changes accordingly, and not the
+    the rest of h1. by adding the span now we can easily select and
+    manipulate the text.
+    -->
+    <h1>the great <span id="colorDisplay"> RGB </span>color game</h1>
+    
+    <!-- 9.2_ now we will add the element for checking of the clicked 
+        color is the wrong or the right one, 
+    -->
+        <!--
+         13.1 here we give the div the id of srtipe and add a new 
+        button.
+        now we got to add the white background and center our div
+
+        -->
+        <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
+        </div>
+
+    <div id  = "container">
+        <!--each of the divs below is inside a container and each one takes
+            about 30% of the container. and we have a margin between them
+            which is 1.66%
+        
+        -->
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+    </div>
+    <script src="D:\WorkSpaces\udemy\bootcamp\js\81_ColorGameProject.js"></script>
+
+</body>
+</html>

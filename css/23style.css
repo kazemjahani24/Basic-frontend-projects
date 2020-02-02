@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Kurale&display=swap');/* 
+the gray box is border 20px around the body and that means
+the body does not go all the way of the screen but it will go 
+up untill border. it will be a good excersice to use a color picker
+and find them on ur own for the first paragraph there is left border. make
+sure all the things are in the same line, then make sure there is margin 
+betweeen the border and then body. the date is all in capital,
+and there is a way to do that in css. also there is a little bit of 
+letter spacing between the date values.
+one more thing is that there is a gray line between the posts,
+and that is a hr(horizontal rule) element. to get it, search for hr styles.
+
+the paragraphs are a different font ,so feel free to use any that u want
+*/ 
+
+body{
+
+    border: 20px solid #bdc3c7 ;
+   padding: 20px;
+   /* what the two lines below means that 
+    make it 80% when u need to but at  a maximum
+    make it 700 px. to be more precise, it means the
+    page will not shrink from 700px until the page width reaches 
+    80% , then it will start to shrink
+   */
+   max-width: 700px;
+   width: 80% ;
+   margin: 20px auto ;
+}
+.quote{
+    border-left: 5px solid #bdc3c7  ;
+    padding-left: 5px ;
+}
+
+.date{
+    margin: 15px;
+    font-family:'Heebo', sans-serif;
+    color:#3385ff ;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+
+h2{
+    margin: 15px;
+    color: #2c3e50;
+    font-size: 2.0rem;
+}
+p{
+
+    margin: 15px;
+    font-family: 'Kurale', serif;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.post{
+    margin-bottom: 20px;
+}

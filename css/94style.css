@@ -1,0 +1,118 @@
+/*
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Domine:400,700&display=swap');
+body{
+    background-image: linear-gradient(to right,	deepskyblue, white);
+}
+#container{
+   
+    width: 360px;
+    /* 
+    we use the trick below to center the div. marign top and buttom 
+    to be zero and left and right to be auto. this trick will center the 
+    div and everything in it.
+    */
+    margin: 0 auto;
+}
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
+
+h1{
+    background:#0066cc;
+    margin-bottom: unset;
+    color: white;
+    padding: 10px;
+    font-family: 'Domine', serif;
+}
+ul{
+    margin-top: unset;
+    width: 360.5px;
+    padding: 0 0;
+    list-style: none;
+}
+input{
+    width: 360.5px;
+    background-color:#f2f2f2;
+   border: 0;
+   padding: 10px;
+   font-family: 'Cinzel', serif;
+
+    
+}
+
+
+
+li{
+    width: 360px;;
+    font-family: 'Cinzel', serif;
+    padding-left: 0;
+    margin: 0;
+    
+}
+li:nth-child(odd) {
+    background-color:white;
+}
+li:nth-child(even) {
+    background-color:#f2f2f2;
+}
+
+.fa-plus{
+    float: right;
+
+    
+}
+
+/*6.2_ first we will style our spans*/
+span{
+    background: red;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    padding-top: 20px;
+
+    /*
+    6.5_ there is one more thing which is bothering us is that
+    even now when we are not hovering over the li, the trash can is still
+    showing, so get rid of that will use the property opacity and set it
+    to zero at the start and set it to one when we hover over it.
+    */
+    opacity: 0;
+
+}
+/*6.3_ the code  below will  make sure that when we hover over the 
+li then the span with the trash can will show up to delete the li.
+*/
+li:hover span{
+    width: 40px;
+
+/*
+6.4_ the line above will just make it to pop up but it will not
+make it lik an animation, so for that we need to use the transition peoperty.
+*/
+transition: 0.2s;
+
+/*6.5.1*/
+opacity: 1;
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto+Slab:400,700&display=swap');
+
+/* the line below is how we can add the image as they want it  */
+
+body{
+    background-image: url(https://i.pinimg.com/originals/d8/f8/61/d8f861694fd9da50b4d15e545e82a640.png);
+    
+    /* the line below will make sure it takes the size of the image and
+    makes it the almost same as the size of the image. to be more specific
+    it will maka the image as small as possible
+    */
+    background-size: cover;
+    background-position: center;
+  
+
+}
+/* when we inspect the html document, we can see that it does the body
+is not taking until the end, and when we resize the page, the images tends to duplicate
+untill the end, and to avoid that we will add the style in the line below.
+
+*/
+html{
+
+    height: 100%;
+}
+
+#center{
+    text-align: center;
+    padding-top: 25%;
+
+}
+h3{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+
+    color: white;
+    font-family: 'Righteous', cursive;
+  
+
+}
+ 
+hr {
+    width: 810px;
+    background-color: red;
+   
+}

@@ -1,0 +1,122 @@
+<!--
+    Discription of the projcet:
+        we will make a jQuery Base todo App, but it will have a pretty
+        heavy focus on css and html, some animation.the first thing about
+        this application is that it is responsive so we can resize it.
+        as i hover overthings a delete button will pop up and we can delete
+        that option with trashcan icon, and when we click on the delete button,
+         it the text fades out and disapears. or when i click on the text we 
+         can check it off, or line it through. then we can add another todo
+         list in the in the list by writing in the add new todo placeholder and
+         we will automatically get a new todo at the buttom that we can checkoff
+         of delete. one more thing is that the plus icon at top  we can click
+         it and hide the add new todo list and  by clicking on it again we
+          can bring the add new todo list again.
+          behind the seens we will use .on(), .keypress(), fades and slides
+          , selecting, margin,  float and fonts.
+
+    there are four new jQuery method we will introduce here:
+            .parent()
+            .append()// creating elements.
+             and event delegation
+           
+    there are two new css method we will introduce here:  
+            font-awesome
+            box-shadow
+            transition
+            gradients// used for the background.
+
+
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="D:\WorkSpaces\udemy\bootcamp\Front-end basics\projects\css\94style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Todo List jQuery Project</title>
+ 
+</head>
+<body>
+    <div id="container">
+    <h1>TO-DO LIST <i class="fa fa-plus" aria-hidden="true"></i></h1>
+    <input type="text" placeholder="Add a New TODO" id="input">
+        <ul id="list">
+            <li><span> <i class="fa fa-trash" aria-hidden="true"></i> </span>brush my teeth</li>
+            <li><span> <i class="fa fa-trash" aria-hidden="true"></i> </span>take a shower</liclass="linethro">
+            <li><span> <i class="fa fa-trash" aria-hidden="true"></i> </span>cook breakfast</li>
+            <li><span> <i class="fa fa-trash" aria-hidden="true"></i> </span>and eat that shit</li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="D:\WorkSpaces\udemy\bootcamp\Front-end basics\projects\js\94_Todo_List_jQuery_Project_pt1.js"></script> 
+</body>
+</html>
+
+
+
+<!--
+
+   1_first we will do doc then press then enter to add the boiler plate
+   of html, then we will add the script of the js file in the html file.
+   after that we will add the the script of jQuery and boostrap from
+   getbootstrap.com, but bare in mind that if we want to add animations
+   which are fadein and fade out then we will have to use .min for jQuery
+   and not slim.min, because slim.min will not work for for jQuery effects.
+   after that.
+
+   2_we have a big heading, then we have button next to it,then we have
+   an input, then we have an ul with some lis with spans in it. the 
+   span will help us to add a clickListener to it and when we click on 
+   it then it will delete the doto list.
+
+   3_ what we want to happen is when we click on the todo list then
+      its color wil change to gray and a line will be through it. next
+      we want to turn back to black get rid of the line through when
+      we click back on the li. 
+
+      4_next we will tackle the span with the x button inside the li, when
+      we click on the x, it should remove the entire todo, it should 
+      fadeout and delete.there is  one problem with this span and that is
+      when we click on the span which is the x, when we click on it,
+      since it is a part of the li element, it will automatically will do 
+      the instructions that we gave it to do which are the color changing to
+      grey and  the line-through  when we click on it. this we will fix it
+      in the js code. stopPropagation() is a jQuery method that will stop
+      the event from bubbling up. so it will fire up until the span then
+      it will not fire on the li element.
+
+      5_This video is about creation of new todos.
+      it is an input, when we write something init,and hit enter,
+      then it will add whatever  we wrote in it in the todo list which
+      we can checkoff or delete.first thing is we want to add a listener
+      for the input which will fire when we hit the enter key.however,after
+      adding the code to create a new todo list, the delete and checkoff will
+      not work for the new ones which we created. and that is when we use
+      click() and on(). we need to use on because this .on() will listeners
+      to all the potential future elements. and to make it work, we need to
+      change our js code slightly.
+
+      6_next we want to work on the plus and trash icon. one thing to 
+      keep in mind  is that if we want the trash can to show as well we
+      add another new item, then we will have to change the code in our
+      javascript code as well. when the trash can are added we need to work
+      on the animation, and for that we will be done using css,  how we 
+      do it is first we will set  the trash can's width to 0 and when we 
+      hover over the li then its width will be 20px. then it is 
+      enimated using the transmition property.
+
+      7. the last thing that we want to do is to make the plus icon to
+      toggle, which means make it to tadein and fade out.
+
+      8_ the last thing we wanna do is to orgnize things to make it 
+      to look better and more professional. the more popular way to
+      do that we will arrange things in css for accodring to specificity.
+      
+
+
+      
+-->
